@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Practical Session</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(167, 227, 255)
+        }
+
+        .intro {
+            width: max-content;
+            background-color: rgb(243, 243, 243);
+            /* color: white; */
+            padding: 2rem 3rem;
+            border-radius: 2rem;
+            box-shadow:
+            3.7px 4.4px 5px rgba(0, 0, 0, 0.008),
+            8.8px 10.6px 12.1px rgba(0, 0, 0, 0.012),
+            16.5px 20px 22.8px rgba(0, 0, 0, 0.015),
+            29.5px 35.7px 40.7px rgba(0, 0, 0, 0.018),
+            55.1px 66.8px 76px rgba(0, 0, 0, 0.022),
+            132px 160px 182px rgba(0, 0, 0, 0.03)
+            ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .intro button {
+            padding: 0.5rem 1rem;
+            width: max-content;
+            background-color: rgb(0, 59, 63);
+            border: none;
+            border-radius: 1rem;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.5s ease-in;
+        }
+
+        .intro button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <h1>Hello! Welcome to Our Git Practical Session.</h1>
+        <h2>Click the button below to initiate a simple JavaScript command.</h2>
+        <button id="initiateButton"><p>INITIATE</p></button>    
+    </div>
+
+
+    <script>
+        // JavaScript code
+        document.getElementById("initiateButton").addEventListener("click", function() {
+            alert("Button clicked! JavaScript initiated.");
+        });
+    </script>
+</body>
+</html>
